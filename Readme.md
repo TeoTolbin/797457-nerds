@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Алексей Толбин](https://up.htmlacademy.ru/htmlcss/22/user/797457).
-* Наставник: `Неизвестно`.
+* Наставник: Макс Масленко (https://htmlacademy.ru/profile/biggus-dickus).
 
 ---
 
