@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <title>Nerds</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="nav-info">
       <h1 class="visually-hidden">Nerds - дизайн студия из Краснодара</h1>
       <a class="header-logo" href="index.html">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds - дизайн студия">
@@ -24,9 +27,62 @@
     <h1 class="catalog-title">Магазин готовых шаблонов</h1>
     </header>
     <main class="container">
-      <aside class="sorting-form">
-        <form></form>
-      </aside>
+      <section class="sorting-form">
+	  <h2 class="visually-hidden">Фильтр готовых шаблонов</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+			<fieldset>
+				<legend>Стоимость:</legend>
+				<input class="price-slider" type="range" min="0" max="15000" step="100" value="9900" name="slider">
+				<p>от</p>
+				<input class="price-from" type="number" name="from" value="0">
+				<p>до</p>
+				<input class="price-to" type="number" name="to" value="15000">
+			</fieldset>
+			<fieldset>
+				<legend class="filter-legend">Сетка:</legend>
+				<ul>
+					<li class="filter-option">
+						<input class="filter-input" type="radio" name="grid" value="adaptive" id="filter-adaptive">
+						<label for="filter-adaptive">Адаптивная</label>
+					</li>
+					<li class="filter-option">
+						<input class="filter-input" type="radio" name="grid" value="fixed" id="filter-fixed">
+						<label for="filter-fixed">Фиксированная</label>
+					</li>
+					<li class="filter-option">
+						<input class="filter-input" type="radio" name="grid" value="rubber" id="filter-rubber">
+						<label for="filter-rubber">Резиновая</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend class="filter-legend">Особенности:</legend>
+				<ul>
+					<li class="filter-option">
+						<input class="filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+						<label for="filter-slider">Слайдер</label>
+					</li>
+					<li class="filter-option">
+						<input class="filter-input-checkbox" type="checkbox" name="advantage" id="filter-advantage">
+						<label for="filter-advantage">Блок преимуществ</label>
+					</li>
+					<li class="filter-option">
+						<input class="filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+						<label for="filter-news">Новости</label>
+					</li>
+					<li class="filter-option">
+						<input class="filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+						<label for="filter-gallery">Галерея</label>
+					</li>
+					<li class="filter-option">
+						<input class="filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+						<label for="filter-basket">Корзина</label>
+					</li>
+				</ul>
+			</fieldset>
+			<button class="filter-button" type="submit">Показать</button>
+		</form>
+      </section>
       <section class="shop-sort">
         <h1 class="visually-hidden">Способ сортировки</h1>
         <div class="sort">
@@ -46,7 +102,10 @@
         <h1 class="visually-hidden">Примеры веб-сайтов</h1>
         <article class="shop-item">
           <div class="item-img">
+            <a href="#">
+            <img src="img/browser.svg" width="360" height="40" class="browser-icon" alt="decoration">
             <img src="img/sedona.jpg" width="360" height="576" alt="sedona">
+            </a>
           </div>
           <div class="item-buy">
             <h3><a class="catalog-item" href="#">sedona</a></h3>
@@ -56,7 +115,10 @@
         </article>
         <article class="shop-item">
           <div class="item-img">
+            <a href="#">
+            <img src="img/browser.svg" width="360" height="40" class="browser-icon" alt="decoration">
             <img src="img/pink.jpg" width="360" height="576" alt="pink">
+          </a>
           </div>
           <div class="item-buy">
             <h3><a class="catalog-item" href="#">pink</a></h3>
@@ -66,7 +128,10 @@
         </article>
         <article class="shop-item">
           <div class="item-img">
+            <a href="#">
+            <img src="img/browser.svg" width="360" height="40" class="browser-icon" alt="decoration">
             <img src="img/borodinski.jpg" width="360" height="576" alt="borodinski">
+          </a>
           </div>
           <div class="item-buy">
             <h3><a class="catalog-item" href="#">borodinski</a></h3>
@@ -76,7 +141,10 @@
         </article>
         <article class="shop-item">
           <div class="item-img">
+            <a href="#">
+            <img src="img/browser.svg" width="360" height="40" class="browser-icon" alt="decoration">
             <img src="img/mishka.jpg" width="360" height="576" alt="mishka">
+          </a>
           </div>
           <div class="item-buy">
             <h3><a class="catalog-item" href="#">mishka</a></h3>
@@ -86,7 +154,10 @@
         </article>
         <article class="shop-item">
           <div class="item-img">
+            <a href="#">
+            <img src="img/browser.svg" width="360" height="40" class="browser-icon" alt="decoration">
             <img src="img/aplus.jpg" width="360" height="576" alt="a plus">
+          </a>
           </div>
           <div class="item-buy">
             <h3><a class="catalog-item" href="#">a plus</a></h3>
@@ -96,7 +167,10 @@
         </article>
         <article class="shop-item">
           <div class="item-img">
+            <a href="#">
+            <img src="img/browser.svg" width="360" height="40" class="browser-icon" alt="decoration">
             <img src="img/kvast.jpg" width="360" height="576" alt="кваст">
+            </a>
           </div>
           <div class="item-buy">
             <h3><a class="catalog-item" href="#">кваст</a></h3>
@@ -134,5 +208,23 @@
         </div>
       </section>
     </footer>
+	<section class="popup">
+		<h2>Напишите нам</h2>
+		<form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+			<p class="feedback-item">
+				<label for="feedback-name">Ваше имя:</label>
+				<input type="text" id="feedback-name" name="name" placeholder="Имя Фамилия">
+			</p>
+			<p class="feedback-item">
+				<label for="feedback-email">Ваш e-mail</label>
+				<input type="email" id="feedback-email" name="e-mail" placeholder="email@example.ru">
+			</p>
+			<p class="feedback-item">
+				<label for="feedback-letter">Текст письма:</label>
+				<textarea id="feedback-letter" name="letter" placeholder="В свободной форме"></textarea>
+			</p>
+			<button class="button" type="submit">Отправить</button>
+		</form>
+	</section>
   </body>
 </html>
