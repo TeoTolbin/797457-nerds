@@ -1,7 +1,6 @@
 body {
 	margin: 0;
 	padding: 0;
-
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
@@ -17,16 +16,13 @@ a {
 	font: inherit;
 }
 
-.header-logo,
-.main-menu,
+.nav-info,
 .catalog-title {
 	margin: 0;
 	padding: 0;
 }
 
-.header-logo,
-.main-menu,
-.main-slider,
+.nav-info,
 .catalog-title {
 	background-color: #eeeeee;
 }
