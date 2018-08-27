@@ -40,6 +40,11 @@ a {
 	color: #000000;
 }
 
+.main-menu-nav-list,
+.main-cart {
+	text-transform: uppercase;
+}
+
 .nav-info a:hover {
 	color: #fb565a;
 }
@@ -76,6 +81,7 @@ a {
 .promo-item {
 	width: 300px;
   padding-top: 175px;
+	padding-right: 0;
   margin-right: 100px;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -287,8 +293,4 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.uppercase {
-	text-transform: uppercase;
 }
