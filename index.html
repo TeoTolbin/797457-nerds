@@ -8,23 +8,29 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="nav-info">
-      <h1 class="visually-hidden">Nerds - дизайн студия из Краснодара</h1>
-      <nav class="main-menu">
-        <a class="header-logo" href="#">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds - дизайн студия">
-        </a>
-        <ul class="reset-list main-menu-nav uppercase">
-          <li class="main-menu-nav-list"><a href="#">Студия</a></li>
-          <li class="main-menu-nav-list"><a href="#">Клиенты</a></li>
-          <li class="main-menu-nav-list"><a href="catalog.html">Магазин</a></li>
-          <li class="main-menu-nav-list"><a href="#">Контакты</a></li>
-        </ul>
-        <div class="main-cart uppercase">
-          <a href="#">Корзина</a>
-        </div>
-      </nav>
-      <div class="main-slider">
+    <header class="page-header">
+      <div class="container">
+        <h1 class="visually-hidden">Nerds - дизайн студия из Краснодара</h1>
+        <nav class="main-menu">
+          <a class="header-logo">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds - дизайн студия">
+          </a>
+          <ul class="reset-list main-menu-nav uppercase">
+            <li class="main-menu-nav-list"><a href="#">Студия</a></li>
+            <li class="main-menu-nav-list"><a href="#">Клиенты</a></li>
+            <li class="main-menu-nav-list"><a href="catalog.html">Магазин</a></li>
+            <li class="main-menu-nav-list"><a href="#">Контакты</a></li>
+          </ul>
+          <div class="main-cart uppercase">
+            <a href="#">Корзина</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="main-slider">
+      <div class="container">
+        <h2 class="visually-hidden">Карусель</h2>
         <label for="slider-btn-1"></label>
         <input type="radio" id="slider-btn-1" name="slider-btn" checked>
         <label for="slider-btn-2"></label>
@@ -32,7 +38,7 @@
         <label for="slider-btn-3"></label>
         <input type="radio" id="slider-btn-3" name="slider-btn">
         <div class="all-slides">
-          <ul class="slide">
+          <ul class="slide reset-list">
             <li class="slide-text">
               <h3 class="slide-title">Долго, дорого,<br> скрупулезно.</h3>
               <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
@@ -51,7 +57,8 @@
           </ul>
         </div>
       </div>
-    </header>
+    </section>
+
     <main class="container">
       <section class="promo-block">
         <ul class="reset-list promo-list">
@@ -90,21 +97,17 @@
             </li>
           </ul>
         </div>
-        <table class="about-us-right about-us-img">
-			     <tr>
-				     <th class="tagline uppercase">С 2004 года любим точность во всем:</th>
-			     </tr>
-           <tr>
-				     <td class="numbers">146<super>%</super></td>
-				     <td class="numbers">100<super>%</super></td>
-				     <td class="numbers">50<super>%</super></td>
-			     </tr>
-			     <tr>
-				     <td class="description">Уровень самоотдачи</td>
-			       <td class="description">Соблюдение сроков</td>
-				     <td class="description">Минимальная предоплата</td>
-			     </tr>
-        </table>
+        <ul class="about-us-right about-us-img reset-list">
+           <li>
+             <p class="tagline uppercase">С 2004 года любим точность во всем:</p>
+           </li>
+				   <li class="numbers"><p>146<super>%</super></p></li>
+				   <li class="numbers"><p>100<super>%</super></p></li>
+				   <li class="numbers"><p>50<super>%</super></p></li>
+				   <li class="description"><p>Уровень самоотдачи</p></li>
+			     <li class="description"><p>Соблюдение сроков</p></li>
+				   <li class="description"><p>Минимальная предоплата</p></li>
+        </ul>
       </section>
       <h1 class="visually-hidden">Мы сотрудничаем с...</h1>
       <ul class="partners">
@@ -125,24 +128,29 @@
          </li>
         <li class="partners-item">
           <a href="#">
-            <img src="img/logo-4.png" width="199" height="68" alt="mishka">
+            <img src="img/logo-4.png" width="173" height="84" alt="mishka">
           </a>
         </li>
       </ul>
     </main>
-    <footer class="footer">
-      <section class="map">
-        <h1 class="visually-hidden">Гдн нас найти</h1>
-        <div class="contact map-img">
+
+    <section class="map">
+      <img class="map-img" width="1440" height="416" src="img/maps.png">
+      <h1 class="visually-hidden">Гдн нас найти</h1>
+      <div class="container">
+        <div class="contact">
           <h3 class="uppercase">Nёrds design studio</h3>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
           <a class="btn uppercase" href="#">Напишите нам</a>
         </div>
-      </section>
+      </div>
+    </section>
+
+    <footer class="footer container">
       <section class="social-offer">
         <h1 class="visually-hidden">Мы в социальных сетях</h1>
-        <ul class="social-icon">
+        <ul class="social-icon reset-list">
           <li class="social-btn"><a href="#" alt="Мы Вконтакте">Vkontakt</a></li>
           <li class="social-btn"><a href="#" alt="Мы в Facebook">Facebook</a></li>
           <li class="social-btn"><a href="#" alt="Мы в Instagram">Instagram</a></li>
@@ -153,30 +161,31 @@
         </div>
       </section>
     </footer>
+
 	  <section class="popup">
-		<h2>Напишите нам</h2>
-		<form class="feedback" action="https://echo.htmlacademy.ru" method="post">
-			<p class="feedback-item">
-				<label for="feedback-name">
-          <p>Ваше имя:</p>
-        </label>
-				<input type="text" id="feedback-name" name="name" placeholder="Имя Фамилия">
-			</p>
-			<p class="feedback-item">
-				<label for="feedback-email">
-          <p>Ваш e-mail</p>
-        </label>
-				<input type="email" id="feedback-email" name="e-mail" placeholder="email@example.ru">
-			</p>
-			<p class="feedback-item">
-				<label for="feedback-letter">
-          <p>Текст письма:</p>
-        </label>
-				<textarea id="feedback-letter" name="letter" placeholder="В свободной форме"></textarea>
-			</p>
-			<button class="btn uppercase" type="submit">Отправить</button>
-      <button class="btn-escape" type="button">x</button>
-		</form>
+  		<h2>Напишите нам</h2>
+  		<form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+  			<p class="feedback-item">
+  				<label for="feedback-name">
+            <p>Ваше имя:</p>
+          </label>
+  				<input type="text" id="feedback-name" name="name" placeholder="Имя Фамилия">
+  			</p>
+  			<p class="feedback-item">
+  				<label for="feedback-email">
+            <p>Ваш e-mail</p>
+          </label>
+  				<input type="email" id="feedback-email" name="e-mail" placeholder="email@example.ru">
+  			</p>
+  			<p class="feedback-item">
+  				<label for="feedback-letter">
+            <p>Текст письма:</p>
+          </label>
+  				<textarea id="feedback-letter" name="letter" placeholder="В свободной форме"></textarea>
+  			</p>
+  			<button class="btn uppercase" type="submit">Отправить</button>
+        <button class="btn-escape" type="button">x</button>
+  		</form>
 	  </section>
   </body>
 </html>
