@@ -1113,7 +1113,7 @@ a {
 	color:#666666;
 }
 
-.popap {
+.popup {
 	display: none;
 	position: fixed;
 	box-sizing: border-box;
@@ -1131,7 +1131,7 @@ a {
 	z-index: 20;
 }
 
-.popap h2 {
+.popup h2 {
 	margin: 0;
 	font-size: 45px;
   line-height: 2.875;
@@ -1139,7 +1139,7 @@ a {
   color: #000000;
 }
 
-.popap p {
+.popup p {
 	display: inline-block;
 }
 
@@ -1181,11 +1181,11 @@ a {
 	border: 2px solid #000000;
 }
 
-.popap .btn {
+.popup .btn {
 	margin-bottom: 84px;
 }
 
-.escape {
+.popup .escape {
 	position: absolute;
 	top: 78px;
 	right: 90px;
@@ -1197,8 +1197,8 @@ a {
 	cursor: pointer;
 }
 
-.escape::before,
-.escape::after {
+.popup .escape::before,
+.popup .escape::after {
 	content: "";
 	position: absolute;
 	top: 10px;
@@ -1208,11 +1208,11 @@ a {
 	background-color: #fecccd;
 }
 
-.escape::before {
+.popup .escape::before {
 	transform: rotate(45deg);
 }
 
-.escape::after {
+.popup .escape::after {
 	transform: rotate(-45deg);
 }
 
@@ -1230,12 +1230,12 @@ a {
 	margin-bottom: 47px;
 }
 
-.popap-show {
+.popup-show {
   display: block;
   animation: zoom 0.6s;
 }
 
-.popap-error {
+.popup-error {
 	animation: shake 0.6s;
 }
 

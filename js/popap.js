@@ -1,10 +1,10 @@
-var escape = document.querySelector(".escape");
-var popap = document.querySelector(".popap");
-var close = document.querySelector(".popap-close");
-var formPopap = document.querySelector(".feedback");
+var write = document.querySelector(".escape");
+var popup = document.querySelector(".popup");
+var close = document.querySelector(".popup-close");
+var formModal = document.querySelector(".feedback");
 var username = document.querySelector("[name=username]");
 var email = document.querySelector("[name=e-mail]");
-var letter = document.querySelector("[name=letter]")
+var message = document.querySelector("[name=letter]")
 var isStorageSupport = true;
 var storage = "";
 
@@ -13,9 +13,9 @@ try {
 } catch (err) {
   isStorageSupport = false;
 }
-escape.addEventListener("click", function (evt) {
+write.addEventListener("click", function (evt) {
 evt.preventDefault();
-popap.classList.add("popap-show");
+popup.classList.add("popup-show");
 if (storage) {
     username.value = storage;
     email.focus();
@@ -26,17 +26,17 @@ if (storage) {
 
 close.addEventListener("click", function (evt) {
 evt.preventDefault();
-popap.classList.remove("popap-show");
-popap.classList.remove("popap-error");
+popup.classList.remove("popup-show");
+popup.classList.remove("popup-error");
 });
 
-forPopap.addEventListener("submit", function (evt) {
+forModal.addEventListener("submit", function (evt) {
   evt.preventDefault();
   if (!username.value || !email.value || !letter.value) {
     evt.preventDefault();
-    popap.classList.remove("popap-error");
-    popap.offsetWidth = popap.offsetWidth;
-    popap.classList.add("popap-error");
+    popup.classList.remove("popup-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("popup-error");
   } else {
     if (isStorageSupport) {
     localStorage.setItem("username", username.value);
@@ -47,9 +47,9 @@ forPopap.addEventListener("submit", function (evt) {
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (popap.classList.contains("popap-show")) {
-      popap.classList.remove("popap-show");
-      popap.classList.remove("popap-error");
+    if (popup.classList.contains("popup-show")) {
+      popup.classList.remove("popup-show");
+      popup.classList.remove("popup-error");
     }
   }
 });
