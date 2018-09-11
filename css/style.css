@@ -67,6 +67,8 @@ a {
 }
 
 .main-menu {
+	display: flex;
+	align-items: center;
 	font-size: 16px;
   font-weight: 500;
   line-height: 1;
@@ -637,6 +639,7 @@ a {
 .range-controls .bar {
 	width: 122px;
 	height: 2px;
+	margin-left: 18px;
 	background: #00ca74;
 }
 
@@ -668,7 +671,7 @@ a {
 
 .price-controls label {
 	display: inline-block;
-	width: 50%;
+	width: 20px;
 	font-size: 16px;
 	text-transform: uppercase;
 }
