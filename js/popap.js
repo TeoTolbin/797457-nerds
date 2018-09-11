@@ -1,10 +1,10 @@
-var write = document.querySelector(".btn-popap");
-var modal = document.querySelector(".popap");
+var escape = document.querySelector(".escape");
+var popap = document.querySelector(".popap");
 var close = document.querySelector(".popap-close");
-var formModal = document.querySelector(".feedback");
+var formPopap = document.querySelector(".feedback");
 var username = document.querySelector("[name=username]");
 var email = document.querySelector("[name=e-mail]");
-var message = document.querySelector("[name=letter]")
+var letter = document.querySelector("[name=letter]")
 var isStorageSupport = true;
 var storage = "";
 
@@ -13,9 +13,9 @@ try {
 } catch (err) {
   isStorageSupport = false;
 }
-write.addEventListener("click", function (evt) {
+escape.addEventListener("click", function (evt) {
 evt.preventDefault();
-modal.classList.add("popap-show");
+popap.classList.add("popap-show");
 if (storage) {
     username.value = storage;
     email.focus();
@@ -26,17 +26,17 @@ if (storage) {
 
 close.addEventListener("click", function (evt) {
 evt.preventDefault();
-modal.classList.remove("popap-show");
-modal.classList.remove("popap-error");
+popap.classList.remove("popap-show");
+popap.classList.remove("popap-error");
 });
 
-formModal.addEventListener("submit", function (evt) {
+forPopap.addEventListener("submit", function (evt) {
   evt.preventDefault();
-  if (!username.value || !email.value || !message.value) {
+  if (!username.value || !email.value || !letter.value) {
     evt.preventDefault();
-    modal.classList.remove("popap-error");
-    modal.offsetWidth = modal.offsetWidth;
-    modal.classList.add("popap-error");
+    popap.classList.remove("popap-error");
+    popap.offsetWidth = popap.offsetWidth;
+    popap.classList.add("popap-error");
   } else {
     if (isStorageSupport) {
     localStorage.setItem("username", username.value);
@@ -47,9 +47,9 @@ formModal.addEventListener("submit", function (evt) {
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (modal.classList.contains("popap-show")) {
-      modal.classList.remove("popap-show");
-      modal.classList.remove("popap-error");
+    if (popap.classList.contains("popap-show")) {
+      popap.classList.remove("popap-show");
+      popap.classList.remove("popap-error");
     }
   }
 });

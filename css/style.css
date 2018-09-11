@@ -1185,7 +1185,7 @@ a {
 	margin-bottom: 84px;
 }
 
-.btn-escape {
+.escape {
 	position: absolute;
 	top: 78px;
 	right: 90px;
@@ -1197,8 +1197,8 @@ a {
 	cursor: pointer;
 }
 
-.btn-escape::before,
-.btn-escape::after {
+.escape::before,
+.escape::after {
 	content: "";
 	position: absolute;
 	top: 10px;
@@ -1208,11 +1208,11 @@ a {
 	background-color: #fecccd;
 }
 
-.btn-escape::before {
+.escape::before {
 	transform: rotate(45deg);
 }
 
-.btn-escape::after {
+.escape::after {
 	transform: rotate(-45deg);
 }
 
