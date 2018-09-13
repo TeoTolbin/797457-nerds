@@ -218,7 +218,7 @@ a {
 .slide-text:nth-child(2) {
 	background-image: url("../img/slide2.png");
 	background-repeat: no-repeat;
-	background-position: 100% 0;
+	background-position: 100% 20px;
 }
 
 .slide-text:nth-child(3) {
@@ -425,7 +425,7 @@ a {
 
 .tagline {
 	display: block;
-	font-weight: 500;
+	font-weight: 700;
 	padding-bottom: 21px;
 	padding-left: 40px;
 }
@@ -447,15 +447,18 @@ a {
 	padding-bottom: 16px;
 	margin: 0;
 }
-/*
+
 .about-us-left .left-text {
 	margin-bottom: 0;
+	margin-top: 40px;
+	font-size: 16px;
 }
-*/
+
 .about-us-left h3 {
 	display: inline-block;
   margin-bottom: 10px;
 	font-weight: bold;
+	font-size: 16px;
 	text-transform: uppercase;
 	padding-bottom: 8px;
 }
@@ -476,8 +479,9 @@ a {
 }
 
 .numbers sup {
+	top: -15px;
 	font-weight: 500;
-	font-size: 28px;
+	font-size: 25px;
 }
 
 .partners {
@@ -630,6 +634,7 @@ a {
 .range-controls {
 	position: relative;
 	height: 41px;
+	width: 240px;
 	margin-bottom: 15px;
 	padding-top: 39px;
 	padding-right: 20px;
@@ -686,7 +691,8 @@ a {
 .price-controls input {
 	width: 60px;
 	padding: 8px 10px;
-	margin-left: 10px;
+	margin-left: 11px;
+	margin-right: 33px;
 	font-size: 16px;
 	text-align: center;
 	color: #283136;
@@ -796,7 +802,7 @@ a {
 
 .filter-btn {
 	width: 260px;
-	font-weight: 700;
+	font-weight: 500;
 	text-align: center;
 	vertical-align: middle;
 	padding: 13px 0;
@@ -845,13 +851,14 @@ a {
 
 .shop-sort ul {
 	display: inline-block;
-	padding: 0;
+	padding: 0;0
 }
 
 .shop-sort li {
 	display: inline-block;
 	margin-right: 27px;
 	font-size: 14px;
+	font-weight: 500;
 	line-height: 1.25;  /*Здесь 18px, но множитель задан для 18.5px*/
 }
 
