@@ -220,7 +220,7 @@ a {
 .slide-text:nth-child(2) {
 	background-image: url("../img/slide2.png");
 	background-repeat: no-repeat;
-	background-position: 100% 20px;
+	background-position: 100% 0;
 }
 
 .slide-text:nth-child(3) {
