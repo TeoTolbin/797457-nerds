@@ -595,17 +595,18 @@ a {
 	align-items: baseline;
 	justify-content: space-between;
 }
-/*
+
 .sorting-form {
-	width: max-content;
+	display: inline-block;
+	vertical-align: top;
 }
-*/
+
 .sorting-form fieldset {
 	border: none;
 }
 
 .filter {
-	width: 360px;
+	width: 260px;
 	flex-shrink: 0;
 }
 
@@ -684,6 +685,9 @@ a {
 }
 
 .price-controls {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
 	font-size: 0;
 }
 
@@ -706,7 +710,11 @@ a {
 	border-radius: 5px;
 	background: #f1f1f1;
 }
-
+/*
+.price-controls input:not(:last-of-type) {
+  margin-right: 57px;
+}
+*/
 .price-to {
 	text-align: right;
 }
