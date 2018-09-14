@@ -420,15 +420,15 @@ a {
 }
 
 .indicators img {
-	margin-top: -38px;
-	padding-bottom: 14px;
+	margin-top: -36px;
+	padding-bottom: 41px;
 	padding-left: 40px;
 }
 
 .tagline {
 	display: block;
 	font-weight: 700;
-	padding-bottom: 21px;
+	padding-bottom: 41px;
 	padding-left: 40px;
 }
 
@@ -484,6 +484,10 @@ a {
 	top: -15px;
 	font-weight: 500;
 	font-size: 25px;
+}
+
+.description {
+	line-height: 18px;
 }
 
 .partners {
@@ -592,13 +596,13 @@ a {
 
 .container-column {
 	display: flex;
-	align-items: baseline;
 	justify-content: space-between;
 }
 
 .sorting-form {
 	display: inline-block;
 	vertical-align: top;
+	width: 260px;
 }
 
 .sorting-form fieldset {
@@ -692,8 +696,9 @@ a {
 }
 
 .price-controls label {
-	display: inline-block;
-	width: 20px;
+	max-width: calc(100% - 80px);
+  padding-right: 10px;
+	padding-top: 5px;
 	font-size: 16px;
 	text-transform: uppercase;
 }
