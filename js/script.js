@@ -27,6 +27,7 @@
   if (popupClose) {
     popupClose.addEventListener("click", function () {
       popup.hidden = true;
+    popup.classList.remove("popup-error");
     });
   }
 

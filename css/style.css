@@ -1,13 +1,3 @@
-/*html {
-	box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-	box-sizing: inherit;
-}*/
-
 body {
 	margin: 0;
 	padding: 0;
@@ -100,17 +90,11 @@ a {
 .main-cart a:hover {
 	color: #fb565a;
 }
-/*
-.main-menu-nav a:not(.current):focus,
-.main-cart a:focus {
-	text-decoration: underline #fb565a;
-}
-*/
+
 .main-menu-nav a:not(.current):active,
 .main-cart a:active {
 	opacity: 0.3;
 	color: #000000;
-	/*text-decoration: underline #fb565a;*/
 }
 
 .main-menu-nav .active {
@@ -616,7 +600,7 @@ a {
 
 .range-controls {
 	width: 260px;
-	margin-top: 49px;
+	margin-top: 25px;
 }
 
 .filter-input,
@@ -715,11 +699,7 @@ a {
 	border-radius: 5px;
 	background: #f1f1f1;
 }
-/*
-.price-controls input:not(:last-of-type) {
-  margin-right: 57px;
-}
-*/
+
 .price-to {
 	text-align: right;
 }
@@ -756,13 +736,13 @@ a {
 	line-height: 30px;
 }
 
-.filter input[type="radio"],
-.filter input[type="checkbox"] {
+.filter .filter-radio,
+.filter .filter-checkbox {
 	display: none;
 }
 
-.filter input[type="radio"] + label,
-.filter input[type="checkbox"] + label {
+.filter .filter-radio + label,
+.filter .filter-checkbox + label {
 	position: relative;
 	font-weight: 500;
 	font-size: 16px;
@@ -772,13 +752,13 @@ a {
 	color: #61686c;
 }
 
-.filter input[type="radio"] + label:hover,
-.filter input[type="checkbox"] + label:hover {
+.filter .filter-radio + label:hover,
+.filter .filter-checkbox + label:hover {
 	color: #000000;
 }
 
-.filter input[type="radio"] + label::before,
-.filter input[type="checkbox"] + label::before {
+.filter .filter-radio + label::before,
+.filter .filter-checkbox + label::before {
 	content: "";
 	display: inline-block;
 	position: absolute;
@@ -789,32 +769,32 @@ a {
 	opacity: 0.4;
 }
 
-.filter input[type="radio"] + label:hover::before,
-.filter input[type="checkbox"] + label:hover::before {
+.filter .filter-radio + label:hover::before,
+.filter .filter-checkbox + label:hover::before {
 	opacity: 1;
 }
 
-.filter input[type="radio"]:disabled + label,
-.filter input[type="checkbox"]:disabled + label {
+.filter .filter-radio:disabled + label,
+.filter .filter-checkbox:disabled + label {
 	opacity: 0.3;
 }
 
-.filter input[type="radio"]:checked + label::before {
+.filter .filter-radio:checked + label::before {
 	background-image: url("../img/radio-on.svg");
 	background-repeat: no-repeat;
 }
 
-.filter input[type="radio"] + label::before {
+.filter .filter-radio + label::before {
 	background-image: url("../img/radio-off.svg");
 	background-repeat: no-repeat;
 }
 
-.filter input[type="checkbox"]:checked + label::before{
+.filter .filter-checkbox:checked + label::before{
 	background-image: url("../img/checkbox-on.svg")
 	;background-repeat: no-repeat;
 }
 
-.filter input[type="checkbox"] + label::before {
+.filter .filter-checkbox + label::before {
 	background-image: url("../img/checkbox-off.svg");
 	background-repeat: no-repeat;
 }
@@ -870,7 +850,7 @@ a {
 
 .shop-sort ul {
 	display: inline-block;
-	padding: 0;0
+	padding: 0;
 }
 
 .shop-sort li {
@@ -878,7 +858,7 @@ a {
 	margin-right: 27px;
 	font-size: 14px;
 	font-weight: 500;
-	line-height: 1.25;  /*Здесь 18px, но множитель задан для 18.5px*/
+	line-height: 18px;
 }
 
 .sorting {
@@ -1145,7 +1125,7 @@ a {
 }
 
 .footer-offer p {
-	line-height: 22px; /*Не смог подобрать множитель*/
+	line-height: 22px;
 	margin: 0;
 	color:#666666;
 }
