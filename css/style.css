@@ -285,7 +285,7 @@ a {
 #slider-btn-3:checked ~ .slider-label .slider-item-3::before {
 	content: "";
 	position: absolute;
-	left: 50%;
+	left: 55%;
 	top: 50%;
 	width: 4px;
 	height: 4px;
