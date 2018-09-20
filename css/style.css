@@ -183,7 +183,6 @@ a {
 	height: 18px;
 	font-size: 0;
 	text-align: center;
-	z-index: 100;
 	transform: translateX(-50%);
 }
 
@@ -204,7 +203,6 @@ a {
 	left: 10px;
 	width: 18px;
 	height: 18px;
-	z-index: 1;
 	background: #ffffff;
 	border-radius: 50%;
 }
@@ -223,6 +221,7 @@ a {
 .slide-text p {
 	max-width: 430px;
 	margin: 0;
+	margin-top: 26px;
 	margin-bottom: 39px;
 	padding-left: 1px;
 	color: #283136;
@@ -264,7 +263,7 @@ a {
 .slider-btn-3:checked ~ .slider-label .slider-item-3::before {
 	content: "";
 	position: absolute;
-	left: 55%;
+	left: 58%;
 	top: 50%;
 	width: 4px;
 	height: 4px;
@@ -276,13 +275,17 @@ a {
 }
 
 .slide-title {
+	display: block;
 	max-width: 600px;
 	margin: 0;
-	margin-bottom: 26px;
 	font-size: 55px;
 	line-height: 1;
 	font-weight: 500;
 	letter-spacing: 0.05px;
+}
+
+.slide-title:nth-child(2) {
+	width: 300px;
 }
 
 .btn {
@@ -509,6 +512,11 @@ padding-left: 3px;
 
 .numbers {
 	padding-bottom: 16px;
+	padding-right: 20px;
+}
+
+.numbers:nth-child(3) {
+	padding-right: 60px;
 }
 
 .numbers sup {
@@ -1161,6 +1169,7 @@ padding-left: 3px;
 	display: flex;
 	align-items: center;
 	margin-top: 63px;
+	margin-bottom: 63px;
 	padding-right: 15px;
 }
 
@@ -1257,7 +1266,7 @@ padding-left: 3px;
 	padding-bottom: 84px;
 	background-color: #ffffff;
 	box-shadow: 0 0 40px 0 #636464;
-	z-index: 20;
+	z-index: 3;
 }
 
 .popup h2 {
