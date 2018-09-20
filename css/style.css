@@ -1092,6 +1092,7 @@ padding-left: 3px;
 .item-buy .btn {
 	background-color: #fb565a;
 	color: #ffffff;
+	margin-bottom: 50px;
 }
 
 .item-buy .btn:hover {
