@@ -247,21 +247,21 @@ a {
 	background-position: 100% 20px;
 }
 
-#slider-btn-1:checked ~ .slide .slide-text:nth-child(1) {
+.slider-btn-1:checked ~ .slide .slide-text:nth-child(1) {
 	display: block;
 }
 
-#slider-btn-2:checked ~ .slide .slide-text:nth-child(2) {
+.slider-btn-2:checked ~ .slide .slide-text:nth-child(2) {
 	display: block;
 }
 
-#slider-btn-3:checked ~ .slide .slide-text:nth-child(3) {
+.slider-btn-3:checked ~ .slide .slide-text:nth-child(3) {
 	display:block;
 }
 
-#slider-btn-1:checked ~ .slider-label .slider-item-1::before,
-#slider-btn-2:checked ~ .slider-label .slider-item-2::before,
-#slider-btn-3:checked ~ .slider-label .slider-item-3::before {
+.slider-btn-1:checked ~ .slider-label .slider-item-1::before,
+.slider-btn-2:checked ~ .slider-label .slider-item-2::before,
+.slider-btn-3:checked ~ .slider-label .slider-item-3::before {
 	content: "";
 	position: absolute;
 	left: 55%;
